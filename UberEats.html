@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/plasticine/100/000000/pizza.png" />
+    <title>Uber Eats US</title>
+    <script src="UberEats.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5180fd630a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="UberEats.css">
+</head>
+
+<body>
+
+    <nav>
+        <div id="nav-bar">
+            <div id="nav-first">
+                <div>
+                    <input type="button" value="Sign In" name="signin">
+                </div>
+                <div>
+                    <p>Create a business account</p>
+                    <p>Add your restaurant</p>
+                    <p>Sign up to deliver</p>
+                </div>
+            </div>
+            <div id="nav-second">
+                <div>
+                    <div><img id="nav-image"
+                            src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d524e619911872cb8ff783bcd7ab4290.svg"
+                            alt="uberEats"></div>
+                    <div>
+                        <p>
+                            There's more to love in the app.
+                        </p>
+                    </div>
+                </div>
+                <div id="os">
+                    <div><i class="fa-brands fa-apple"></i>iPhone</div>
+                    <div><i class="fa-brands fa-android"></i>Android</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="overlay" onclick="navIn()"></div>
+    <main>
+        <div>
+            <img class="backImg" src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/f8469dc5740fd2ebf768e1d340b7d300.svg">
+        </div>
+        <div>
+            <img class="backImg" id="secImg" src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/0636ad8855899a0067b23838856a7845.svg">
+        </div> 
+        
+        <header>
+            <div>
+                <div id="menu-out" onclick="handleNav()">
+                    <div id="nav-menu"></div>
+                </div>
+                <div id="heading">
+                    <h1 id="uber-head">Uber</h1>
+                    <h1 id="eats-head">Eats</h1>
+                </div>
+            </div>
+            <div>
+              <input type="text" name="add" id="add" placeholder="Enter delivery address">
+            </div>
+            <div id="sign-in">
+                <input type="button" value="Sign in" name="signin">
+            </div>
+        </header>
+
+        <section id="sec1">
+            <div>
+                <div><h1>Order food to your door</h1></div>
+                <div id="fields">
+                    <input type="text" name="address" id="address" placeholder="Enter delivery address"> 
+                    <div id="select">
+                        <div class="selDiv" onclick="dropdown()"><i class="fa-solid fa-clock-nine"></i> Deliver now <i class="fa-solid fa-angle-down"></i></div>
+                        <div id="inner">
+                            <div class="selDiv"> Deliver now </div>
+                            <div class="selDiv"> Schedule for later</div>
+                        </div>
+                    </div>
+                    <input type="button" value="Find Food">
+                </div>
+                <div>
+                    <p><a href = "#">Sign In</a> for your recent address</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <section id="sec2">
+        <div>
+            <div>
+                <div><img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d68c5f5ddd33d16a8d6855987410673b.svg"></div>
+                <div class="text">
+                    <h3>Feed your employees</h3>
+                    <a href="#">Create a business account</a>
+                </div>
+            </div>
+            <div>
+                <div><img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/f37288f1ff264310c703ea536190f79c.svg"></div>
+                <div class="text">
+                    <h3>Your restaurant, delivered</h3>
+                    <a href="#">Add your restaurant</a>
+                </div>
+            </div>
+            <div>
+                <div><img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/43d9d02eb8ef72ff2029a296cfb91180.svg"></div>
+                <div class="text">
+                    <h3>Deliver with Uber Eats</h3>
+                    <a href="#">Sign up to deliver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec3">
+        <div>
+            <h3>Cities near me</h3>
+            <a href="#">View all 500+ cities</a>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13644.5650643443!2d75.70224535!3d31.24451245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1645211203925!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <section class="sec4">
+        <div>
+            <div>
+                <div>Atlanta</div>
+                <div>Austin</div>
+                <div>Baltimore-Maryland</div>
+                <div>Boston</div>
+                <div>Charlotte</div>
+                <div>Chicago</div>
+            </div>
+            <div>
+                <div>Dallas-Fort Worth</div>
+                <div>Denver</div>
+                <div>Las Vegas</div>
+                <div>Los Angeles</div>
+                <div>Miami</div>
+                <div>Minneapolis - St. Paul</div>
+            </div>
+            <div>
+                <div>New York City</div>
+                <div>Palm Springs</div>
+                <div>Philadelphia</div>
+                <div>Phoenix</div>
+                <div>Pittsburgh</div>
+                <div>Portland</div>
+            </div>
+            <div>
+                <div>Sacramento</div>
+                <div>San Diego</div>
+                <div>San Francisco Bay Area</div>
+                <div>Seattle</div>
+                <div>Tampa Bay</div>
+                <div>Washington D.C.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec4">
+        <div id="sec5-head">
+            <h3>Countries with Uber Eats</h3>
+        </div>
+        <div>
+            <div>
+                <div>United States</div>
+                <div>Spain</div>
+                <div>Brazil</div>
+                <div>Mexico</div>
+                <div>France</div>
+                <div>Japan</div>
+            </div>
+            <div>
+                <div>Canada</div>
+                <div>Australia</div>
+                <div>Poland</div>
+                <div>United Kingdom</div>
+                <div>Italy</div>
+                <div>Portugal</div>
+            </div>
+            <div>
+                <div>Switzerland</div>
+                <div>Chile</div>
+                <div>New Zealand</div>
+                <div>Taiwan (ROC)</div>
+                <div>South Africa</div>
+                <div>Belgium</div>
+            </div>
+            <div>
+                <div>Ecuador</div>
+                <div>Ireland</div>
+                <div>Sri Lanka</div>
+                <div>Sweden</div>
+                <div>Guatemala</div>
+                <div>Costa Rica</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>
